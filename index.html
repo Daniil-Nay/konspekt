@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Конспект" />
+    <meta name="theme-color" content="#f3f2ee" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#131417" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <title>Конспект</title>
+    <script>
+      // Apply a forced theme before the first paint (the choice itself lives in the app settings).
+      try {
+        var theme = localStorage.getItem('konspekt.theme');
+        if (theme === 'light' || theme === 'dark') document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    </script>
+    <style>html,body,#app{height:100%;margin:0}html{--lightningcss-light:initial;--lightningcss-dark: ;color-scheme:light dark}@media (prefers-color-scheme:dark){html{--lightningcss-light: ;--lightningcss-dark:initial}}body{color:#1d1f23;overscroll-behavior:none;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent;background:#f3f2ee;font-family:-apple-system,BlinkMacSystemFont,SF Pro Text,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif}@media (prefers-color-scheme:dark){html:not([data-theme=light]) body{color:#ecedf0;background:#131417}}html[data-theme=dark] body{color:#ecedf0;background:#131417}.boot{letter-spacing:-.01em;opacity:.55;justify-content:center;align-items:center;gap:12px;height:100%;font-size:22px;font-weight:800;display:flex}.boot__mark{background:#3347c8;border-radius:9px;width:34px;height:34px}</style>
+    <script type="module" crossorigin src="./assets/index-CcAd5tpa.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-xhVw3arq.css">
+  <link rel="manifest" href="./manifest.webmanifest"></head>
+  <body>
+    <div id="app">
+      <div class="boot" aria-hidden="true"><span class="boot__mark"></span><span>Конспект</span></div>
+    </div>
+    <noscript>Для работы «Конспекта» нужен JavaScript.</noscript>
+  </body>
+</html>
